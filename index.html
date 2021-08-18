@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2> Strong Password Generator</h2>
+        <div class="result-container">
+            <textarea placeholder="Your new password will appear here." id="result" class="txt_password"
+                oninput="auto_grow(this)"></textarea>
+
+        </div>
+        <div class="inputs">
+            <div class="input">
+                <label>Password length</label>
+                <input type="number" id="length" min='4' max='200' value='10' />
+            </div>
+
+            <div class="input">
+                <label>Quantity</label>
+                <input type="number" id="quantity" min='1' max='20' value='2' />
+            </div>
+
+            <div class="input">
+                <label>Include uppercase letters( e.g. ABCDEFGH )</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="input">
+                <label>Include lowercase letters( e.g. abcdefgh )</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="input">
+                <label>Include numbers( e.g. 123456 )</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="input">
+                <label>Include symbols( e.g. @#$% )</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Generate Secrets
+        </button>
+
+        <button class="btn btn-large" id="clipboard">Copy
+        </button>
+    </div>
+
+    <div id="content">
+        <h2>Generate Strong & Random Passwords</h2>
+        <p id="text">
+            Security threats are real when it comes to passwords. A recent report indicates that passwords are the cause
+            of over 80% of hacking-related breaches. The first step in protecting your personal information is to create
+            strong passwords. The Strong Password Generator can come in handy here. A password that is impossible to
+            crack has multiple types of characters (numbers, letters, and symbols). You can also avoid hackers by using
+            different passwords for each website or application. Passwords generated here by you are never transmitted
+            over the Internet.
+        </p>
+    </div>
+    <div class="textinner">
+
+        <h3>How to make a good strong password</h3>
+
+        <div class="strong-row">
+
+            <div class="strong-column">
+                <p><strong>A strong password has:</strong></p>
+                <ul>
+                    <li>at least <strong>10 characters</strong></li>
+                    <li><strong>uppercase letters</strong></li>
+                    <li><strong>lowercase letters</strong></li>
+                    <li><strong>numbers</strong></li>
+                    <li><strong>symbols</strong>, such as <span>` ! ” ? $ ? % ^ &amp; * ( ) _ – + = { [ } ] : ; @ ‘ ~ #
+                            | &lt; , &gt; . ? /</span></li>
+                </ul>
+
+            </div>
+
+            <div class="strong-column">
+                <p><strong>A strong password is:</strong></p>
+                <ul>
+                    <li>not your <strong>username</strong></li>
+                    <li>not your <strong>name</strong>, your <strong>friend’s name</strong>, your <strong>family
+                            member’s name</strong>, or a <strong>common name</strong></li>
+                    <li>not your <strong>date of birth</strong></li>
+                    <li>not a dictionary <strong>word</strong></li>
+                    <li>not like your <strong>previous passwords</strong></li>
+                    <li>not a <strong>keyboard pattern</strong>, such as <span>qwerty,
+                            asdfghjkl, or 12345678</span></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <p id="footer">Created by <a href="https://www.linkedin.com/in/digital-rohitpandey/" >Rohit Pandey</a> | Visit <a href="https://github.com/rohitpandey49">Github</a></p>
+
+</body>
+<script src="script.js"></script>
+
+</html>

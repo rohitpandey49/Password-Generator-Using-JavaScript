@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #2D2926FF;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
+	min-height: 50vh;
+	
+}
+
+#text{
+	color: white;
+    width: 810px;;
+    text-align: justify;
+    font-size: 22px;
+	padding: 0px 0px 25px 0px;
+}
+
+#content h2{
+	padding: 0px;
+}
+
+
+h2 {
+	margin: 0px 0 30px;
+	text-align: center;
+    color: white;
+    font-size: 5vh;
+	padding: 0px 20px 0px 0px;
+}
+
+.container {
+	background-color: #E94B3CFF;
+	padding: 35px 0px 35px 40px;
+    width: 810px;
+    max-width: 100%;
+    margin: 50px;
+}
+
+.result-container {
+
+    position: relative;
+    width: 100%;
+}
+
+.result-container #result {
+	max-width: calc(100% - 40px);
+}
+
+.txt_password {
+	width: 800px;
+    min-height: 64px;
+    line-height: 40px;
+    font-family: Courier New,Arial,Helvetica,sans-serif;
+    font-size: 35px;
+    color: black;
+    padding: 15px 15px 10px 15px;
+	resize: none;
+	box-sizing: border-box;
+
+}
+
+input[type=checkbox] {
+		width: 25px;
+		height: 25px; 
+		display: block;
+	  
+}
+
+input[type=number] {
+		width: 75px;
+		height: 30px; 
+		font-size: 25px;
+	  
+}
+
+.btn {
+	border: none;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	padding: 10px 12px;
+	background-color: #2D2926FF;
+	margin: 0px 0px 10px 0px;
+	font-size: 25px;
+	border-radius: 35px;
+	display: block;
+	width: 94%;
+}
+
+.btn:hover{
+	background-color: rgb(224, 137, 70);
+	color: black;
+
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: 25px 41px 25px 0px;
+    font-size: 24px;
+    color: white;
+}
+
+
+#footer{
+	color: white;
+	font-size: 20px;
+}
+
+#content p{
+font-family: Roboto;;
+}
+
+.textinner{
+	color: black;
+    background-color: white;
+    width: 810px;
+    padding: 0px 50px 30px 50px;
+	border: 4px solid #E94B3CFF;
+}
+
+h3{
+	font-size: 32px;
+	text-align: center;
+}
+
+.textinner p {
+font-size: 20px;
+}
+
+li{
+	font-size: 18px;
+}
+
+a {
+	color: white;
+  }
+
+@media screen and (max-width:900px) {
+	#text{
+		width: auto;
+		font-size: 4vw;
+		padding: 0px 18px 18px 18px
+	}
+
+	.container{
+		margin: 0px 35px 35px 35px;
+	}
+
+    .textinner{
+	width: auto;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.result-container {
+		font-size: 14px;
+	}
+
+	.txt_password {
+		font-size: 4.65vw;
+	
+	}
+	.input {
+		font-size: 5.87vw;
+	}
+
+	input[type=checkbox] {
+		width: 7.99vw;
+		height: 5.99vw;
+	}
+
+	input[type=number] {
+		width: 11.97vw;
+		height: 4.58vw;
+		font-size: 3.5vw;
+	}
+
+	.btn {
+		width: 89%;
+		font-size: 20px;
+	}
+	
+}
